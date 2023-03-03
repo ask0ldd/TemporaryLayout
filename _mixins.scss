@@ -1,0 +1,23 @@
+@mixin flex_col-w100{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+@mixin flex_row-h100{
+    height:100%;
+    display:flex;
+    flex-direction: row;
+}
+
+@mixin flex_col-h100{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+@mixin flex_row-w100{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
