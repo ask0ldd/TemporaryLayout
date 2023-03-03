@@ -1,1 +1,5 @@
 @import 'variables', 'mixins';
+
+.main-title{
+    @include flex_col-w100();
+}

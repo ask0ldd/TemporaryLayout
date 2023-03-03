@@ -1,1 +1,5 @@
-/*# sourceMappingURL=main.css.map */
+.main-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=main.css.map */
