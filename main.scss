@@ -1,10 +1,18 @@
-@import 'variables', 'mixins', 'resets', 'header';
+@import 'variables', 'mixins', 'resets', 'header', 'home';
 
 body {
-    max-width: 1400px;
-    padding: 0 30px;
-    background-color: #fff;
+    padding: 0;
+    background-color: #F7F7F7;
     margin: 0 auto;
     color: #000;
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 376px) {
+    main {
+        padding: 0 30px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
