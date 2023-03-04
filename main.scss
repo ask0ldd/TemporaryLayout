@@ -1,5 +1,10 @@
-@import 'variables', 'mixins';
+@import 'variables', 'mixins', 'resets', 'header';
 
-.main-title{
-    @include flex_col-w100();
+body {
+    max-width: 1400px;
+    padding: 0 30px;
+    background-color: #fff;
+    margin: 0 auto;
+    color: #000;
+    font-size: 1rem;
 }

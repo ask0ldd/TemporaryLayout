@@ -1,5 +1,38 @@
-.main-title {
-  width: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  height: 64px;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+}
+header .back-arrow {
+  width: 4rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .company-name {
+  display: flex;
+  font-size: 2rem;
+  width: calc(100% - 8rem);
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  max-width: 1400px;
+  padding: 0 30px;
+  background-color: #fff;
+  margin: 0 auto;
+  color: #000;
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
