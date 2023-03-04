@@ -121,6 +121,24 @@
     }
 }
 
+.restos-section{
+    display: flex;
+    flex-direction: column;
+    padding:3rem 1rem 0 1rem;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+
+    h2{
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .resto-card{
+        width: 100%;
+        
+    }
+}
+
 @media screen and (min-width: 800px) {
     .stepbystep-section{
         
