@@ -86,6 +86,7 @@
 
             &:hover{
                 background-color:#F5EDFF;
+                box-shadow: 0px 4px 8px 0px #c4b7c4, 0px 1px 2px 0px #b4a7b4;
             }
 
             &:hover svg{
@@ -122,12 +123,36 @@
 
 @media screen and (min-width: 800px) {
     .stepbystep-section{
+        
         h2{
             text-align: center;
         }
-        button{
-            max-width: 320px;
-            margin:0 auto;
+
+        .steps-container{
+            max-width: 85%;
+            column-gap: 2rem;
+            flex-direction: column;
+
+            button{
+                max-width: 340px;
+                margin:0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    .stepbystep-section{
+
+        .steps-container{
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: none;
+
+            button{
+                max-width: none;
+                flex: 1 1 320px;
+            }
         }
     }
 }

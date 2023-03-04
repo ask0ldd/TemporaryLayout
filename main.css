@@ -144,6 +144,7 @@
 }
 .stepbystep-section .steps-container button:hover {
   background-color: #F5EDFF;
+  box-shadow: 0px 4px 8px 0px #c4b7c4, 0px 1px 2px 0px #b4a7b4;
 }
 .stepbystep-section .steps-container button:hover svg {
   fill: #9356DC;
@@ -175,9 +176,26 @@
   .stepbystep-section h2 {
     text-align: center;
   }
-  .stepbystep-section button {
-    max-width: 320px;
+  .stepbystep-section .steps-container {
+    max-width: 85%;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    flex-direction: column;
+  }
+  .stepbystep-section .steps-container button {
+    max-width: 340px;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1130px) {
+  .stepbystep-section .steps-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: none;
+  }
+  .stepbystep-section .steps-container button {
+    max-width: none;
+    flex: 1 1 320px;
   }
 }
 body {
