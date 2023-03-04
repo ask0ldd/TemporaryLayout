@@ -175,16 +175,55 @@
 .restos-section {
   display: flex;
   flex-direction: column;
-  padding: 3rem 1rem 0 1rem;
+  padding: 3rem 1rem 4rem 1rem;
   font-family: "Roboto", sans-serif;
   align-items: center;
+  row-gap: 1.5rem;
 }
 .restos-section h2 {
   width: 100%;
   max-width: 800px;
+  margin-bottom: 0.5rem;
 }
 .restos-section .resto-card {
   width: 100%;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px 0px #d3c9d3;
+}
+.restos-section .resto-card img {
+  width: 100%;
+  height: 11rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.restos-section .resto-card__datasnlike-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5rem;
+}
+.restos-section .resto-card__datas-container {
+  padding: 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 4rem);
+  height: 100%;
+}
+.restos-section .resto-card__datas-container p {
+  line-height: 32px;
+}
+.restos-section .resto-card__likecontainer {
+  height: 100%;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 800px) {
