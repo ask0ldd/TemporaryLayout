@@ -180,6 +180,13 @@
   align-items: center;
   row-gap: 1.5rem;
 }
+.restos-section .restos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  width: 100%;
+}
 .restos-section h2 {
   width: 100%;
   margin-bottom: 0.5rem;
@@ -208,7 +215,7 @@
   font-size: 14px;
   font-weight: 600;
 }
-.restos-section .resto-card img {
+.restos-section .resto-card .resto-img {
   width: 100%;
   height: 11rem;
   -o-object-fit: cover;
@@ -252,10 +259,24 @@
     -moz-column-gap: 2rem;
          column-gap: 2rem;
     flex-direction: column;
+    padding-left: 1rem;
   }
   .stepbystep-section .steps-container button {
     max-width: 340px;
     margin: 0 auto;
+  }
+  .restos-section .restos-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+  .restos-section .restos-container .resto-card {
+    flex: 1 1 400px;
+  }
+  .restos-section .restos-container .resto-card .resto-img {
+    -o-object-position: center;
+       object-position: center;
   }
 }
 @media screen and (min-width: 1130px) {
@@ -268,11 +289,29 @@
     max-width: none;
     flex: 1 1 320px;
   }
+  .restos-section .restos-container .resto-card {
+    flex: 1 1 500px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1432px) {
+  .restos-section {
+    padding: 3rem 1rem 4rem 1rem;
+  }
 }
 footer {
   background-color: #353535;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1rem;
   color: #fff;
+  display: flex;
+  justify-content: center;
+}
+footer .footer-container {
+  flex-grow: 1;
+  max-width: 1400px;
+}
+footer h4 {
+  margin-bottom: 1.5rem;
 }
 footer ul {
   display: flex;
@@ -280,6 +319,11 @@ footer ul {
   row-gap: 0.75rem;
 }
 
+@media screen and (min-width: 1400px) {
+  footer {
+    padding: 2rem 0;
+  }
+}
 body {
   padding: 0;
   background-color: #F7F7F7;
@@ -295,8 +339,8 @@ h2 {
 
 @media screen and (min-width: 700px) {
   main {
-    padding: 0 30px;
-    max-width: 1400px;
+    /*padding: 0 30px;*/
+    max-width: 1432px;
     margin: 0 auto;
   }
 }/*# sourceMappingURL=main.css.map */

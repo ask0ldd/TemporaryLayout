@@ -129,6 +129,14 @@
     align-items: center;
     row-gap: 1.5rem;
 
+    .restos-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+        width: 100%;
+    }
+
     h2{
         width: 100%;
         margin-bottom:0.5rem;
@@ -159,7 +167,7 @@
             font-weight: 600;
         }
 
-        img{
+        .resto-img{
             width: 100%;
             height:11rem;
             object-fit: cover;
@@ -212,11 +220,29 @@
             max-width: 85%;
             column-gap: 2rem;
             flex-direction: column;
+            padding-left: 1rem;
 
             button{
                 max-width: 340px;
                 margin:0 auto;
             }
+        }
+    }
+
+    .restos-section{
+        .restos-container{
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 1.5rem;
+
+            .resto-card{
+                flex:1 1 400px;
+
+                .resto-img{
+                    object-position: center;
+                }
+            }
+
         }
     }
 }
@@ -234,5 +260,22 @@
                 flex: 1 1 320px;
             }
         }
+    }
+
+    .restos-section{
+        .restos-container{
+
+            .resto-card{
+                flex:1 1 500px;
+                width: 50%;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1432px) {
+    .restos-section{
+        padding:3rem 1rem 4rem 1rem;
     }
 }
