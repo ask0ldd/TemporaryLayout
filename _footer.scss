@@ -1,4 +1,11 @@
 footer{
    background-color: $footer-bgcolor; 
    padding:2rem 1.5rem;
+   color: #fff;
+
+   ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+   }
 }

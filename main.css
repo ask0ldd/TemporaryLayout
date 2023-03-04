@@ -182,7 +182,6 @@
 }
 .restos-section h2 {
   width: 100%;
-  max-width: 800px;
   margin-bottom: 0.5rem;
 }
 .restos-section .resto-card {
@@ -193,6 +192,21 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0px 4px 8px 0px #d3c9d3;
+  position: relative;
+}
+.restos-section .resto-card__nouveau {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  height: 2rem;
+  padding: 0 1rem;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
 }
 .restos-section .resto-card img {
   width: 100%;
@@ -214,6 +228,9 @@
   flex-direction: column;
   width: calc(100% - 4rem);
   height: 100%;
+}
+.restos-section .resto-card__datas-container h3 {
+  font-size: 18px;
 }
 .restos-section .resto-card__datas-container p {
   line-height: 32px;
@@ -255,6 +272,12 @@
 footer {
   background-color: #353535;
   padding: 2rem 1.5rem;
+  color: #fff;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
 }
 
 body {
