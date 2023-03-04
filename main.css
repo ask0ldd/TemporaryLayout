@@ -54,6 +54,7 @@
   align-items: center;
   z-index: 1;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 376px) {
@@ -65,7 +66,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
+  font-family: "Roboto", sans-serif;
 }
 .browse-section h2 {
   padding: 2rem 4rem 1rem 4rem;
@@ -83,6 +85,7 @@
   text-align: center;
   font-weight: 300;
   padding: 0 2rem;
+  font-size: 20px;
 }
 .browse-section button {
   padding: 1rem 1.5rem;
@@ -91,14 +94,63 @@
   border: none;
   border-radius: 4rem;
   margin-top: 2rem;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1rem;
   box-shadow: 0px 4px 8px 0px #bdadbd;
+  cursor: pointer;
 }
 
 .stepbystep-section {
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 3rem 1rem 0 1rem;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+}
+.stepbystep-section h2 {
+  width: 100%;
+  max-width: 800px;
+}
+.stepbystep-section .steps-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-top: 2rem;
+  max-width: 800px;
+}
+.stepbystep-section .steps-container button {
+  height: 72px;
+  border-radius: 22px;
+  border: none;
+  background-color: #F7F7F7;
+  box-shadow: 0px 4px 8px 0px #d3c9d3;
+  font-weight: 600;
+  font-size: 1rem;
+  width: calc(100% - 1rem);
+  margin-left: auto;
+  cursor: pointer;
+  position: relative;
+}
+.stepbystep-section .steps-container button:hover {
+  background-color: #F5EDFF;
+}
+.stepbystep-section .steps-container button .step-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: #9356DC;
+  position: absolute;
+  top: 1.25rem;
+  left: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.stepbystep-section .steps-container button .step-circle span {
+  margin-top: 1px;
 }
 
 body {
@@ -110,7 +162,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@media screen and (min-width: 376px) {
+h2 {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 700px) {
   main {
     padding: 0 30px;
     max-width: 1400px;
