@@ -124,10 +124,11 @@
   row-gap: 2rem;
   margin-top: 2rem;
   max-width: 800px;
+  padding-bottom: 4rem;
 }
 .stepbystep-section .steps-container button {
   height: 64px;
-  border-radius: 22px;
+  border-radius: 16px;
   border: none;
   background-color: #F7F7F7;
   box-shadow: 0px 4px 8px 0px #d3c9d3;
@@ -170,7 +171,10 @@
   fill: #7E7E7E;
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 800px) {
+  .stepbystep-section h2 {
+    text-align: center;
+  }
   .stepbystep-section button {
     max-width: 320px;
     margin: 0 auto;
