@@ -358,8 +358,9 @@
 .menu__plat-container:hover .resize-validate {
   width: 4rem;
 }
-.menu__plat-container:hover .resize-validate img {
-  transform: rotate(360deg);
+.menu__plat-container:hover .checked-circle {
+  /*transition: all 0.35s ease-in;*/
+  animation: 0.35s ease-in 0s backwards rotateicon;
 }
 .menu ul {
   padding: 0;
@@ -412,8 +413,13 @@
   overflow: hidden;
   transition: all 0.2s ease-in;
 }
-.menu__plat-validate img {
-  transition: all 0.35s ease-in;
+@keyframes rotateicon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 footer {

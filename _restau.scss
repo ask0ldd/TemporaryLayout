@@ -62,8 +62,9 @@
             width: 4rem;
         }
 
-        & .resize-validate img{
-            transform: rotate(360deg);
+        & .checked-circle{
+            /*transition: all 0.35s ease-in;*/
+            animation: 0.35s ease-in 0s backwards rotateicon;
         }
     }
 
@@ -124,7 +125,12 @@
         transition: all 0.2s ease-in;
     }
 
-    &__plat-validate img{
-        transition: all 0.35s ease-in;
+    @keyframes rotateicon {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
     }
 }
