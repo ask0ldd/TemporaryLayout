@@ -14,7 +14,6 @@
         background-color: $main-bgcolor;
         margin-top: -2rem;
         border-radius: 32px;
-        height: 20rem;
         padding: 2rem 1rem;
     }
 
@@ -25,16 +24,78 @@
 
     h3{
         font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
     }
 
     &__categorie{
         display: flex;
         flex-direction: column;
+        margin-top: 2.5rem;
     }
 
     &__plat-container{
         display: flex;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         box-shadow: 0px 4px 8px 0px #d3c9d3;
+        height:4rem;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        background-color: #fff;
+        margin-top: 1.5rem;
+    }
+    
+    &__plat{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        min-width: 0;
+        flex: 1;
+        margin-bottom: 0.6rem;
+        margin-top: auto;
+        margin-left: 0.5rem;
+   
+        h4{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            min-width: 0;
+        }
+
+        p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            min-width: 0;
+        }
+    }
+
+    &__prix{
+        display: flex;
+        margin-left: auto;
+        width: 5rem;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-bottom: 0.6rem;
+        margin-top: auto;
+    }
+
+    &__plat-validate{
+        width: 4rem;
+        background-color: $tertiary-color;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        overflow: hidden;
     }
 }
