@@ -1,0 +1,40 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+
+    &__pic{
+        height:16rem;
+        width: 100%;
+        object-fit: cover;
+        object-position:top;
+        z-index: -1;
+    }
+
+    &__categories-container{
+        background-color: $main-bgcolor;
+        margin-top: -2rem;
+        border-radius: 32px;
+        height: 20rem;
+        padding: 2rem 1rem;
+    }
+
+    h2{
+        font-family: 'Shrikhand';
+        font-size: 28px;
+    }
+
+    h3{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__categorie{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__plat-container{
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 4px 8px 0px #d3c9d3;
+    }
+}

@@ -38,10 +38,11 @@
   height: 100%;
 }
 .header .company-name {
+  font-family: "Shrikhand", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 30px;
   width: calc(100% - 8rem);
 }
 .header__row2-container {
@@ -303,6 +304,43 @@
     padding: 3rem 1rem 4rem 1rem;
   }
 }
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu__pic {
+  height: 16rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  z-index: -1;
+}
+.menu__categories-container {
+  background-color: #F7F7F7;
+  margin-top: -2rem;
+  border-radius: 32px;
+  height: 20rem;
+  padding: 2rem 1rem;
+}
+.menu h2 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+}
+.menu h3 {
+  font-family: "Roboto", sans-serif;
+}
+.menu__categorie {
+  display: flex;
+  flex-direction: column;
+}
+.menu__plat-container {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px 0px #d3c9d3;
+}
+
 footer {
   background-color: #353535;
   padding: 2rem 1rem;
