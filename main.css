@@ -331,6 +331,16 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 18px;
+  position: relative;
+}
+.menu h3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 4px;
+  width: 3rem;
+  background-color: #99E2D0;
 }
 .menu__categorie {
   display: flex;
@@ -345,6 +355,12 @@
   border-radius: 12px;
   overflow: hidden;
 }
+.menu__plat-container:hover .resize-validate {
+  width: 4rem;
+}
+.menu__plat-container:hover .resize-validate img {
+  transform: rotate(360deg);
+}
 .menu ul {
   padding: 0;
   margin: 0;
@@ -358,9 +374,9 @@
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
-  min-width: 0;
-  flex: 1;
-  margin-bottom: 0.6rem;
+  min-width: 0; /* for ellipsis to work cause by default flex content can't be smaller than its content */
+  flex: 1; /* for ellipsis to work */
+  margin-bottom: 0.55rem;
   margin-top: auto;
   margin-left: 0.5rem;
 }
@@ -382,11 +398,11 @@
   width: 5rem;
   justify-content: center;
   flex-shrink: 0;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.55rem;
   margin-top: auto;
 }
 .menu__plat-validate {
-  width: 4rem;
+  width: 0;
   background-color: #99E2D0;
   height: 100%;
   display: flex;
@@ -394,6 +410,10 @@
   align-items: center;
   flex-shrink: 0;
   overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.menu__plat-validate img {
+  transition: all 0.35s ease-in;
 }
 
 footer {

@@ -26,6 +26,17 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         font-size: 18px;
+        position: relative;
+    }
+
+    h3:after{
+        content:"";
+        position: absolute;
+        left:0;
+        bottom:-8px;
+        height:4px;
+        width:3rem;
+        background-color: $tertiary-color;
     }
 
     &__categorie{
@@ -34,6 +45,8 @@
         margin-top: 2.5rem;
     }
 
+
+
     &__plat-container{
         display: flex;
         /*justify-content: space-between;*/
@@ -41,6 +54,17 @@
         height:4rem;
         border-radius: 12px;
         overflow: hidden;
+    }
+
+    &__plat-container:hover{
+        
+        & .resize-validate{
+            width: 4rem;
+        }
+
+        & .resize-validate img{
+            transform: rotate(360deg);
+        }
     }
 
     ul{
@@ -57,9 +81,9 @@
         display: flex;
         flex-direction: column;
         row-gap: 0.5rem;
-        min-width: 0;
-        flex: 1;
-        margin-bottom: 0.6rem;
+        min-width: 0; /* for ellipsis to work cause by default flex content can't be smaller than its content */
+        flex: 1; /* for ellipsis to work */
+        margin-bottom: 0.55rem;
         margin-top: auto;
         margin-left: 0.5rem;
    
@@ -84,12 +108,12 @@
         width: 5rem;
         justify-content: center;
         flex-shrink: 0;
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.55rem;
         margin-top: auto;
     }
 
     &__plat-validate{
-        width: 4rem;
+        width: 0;
         background-color: $tertiary-color;
         height: 100%;
         display: flex;
@@ -97,5 +121,10 @@
         align-items: center;
         flex-shrink: 0;
         overflow: hidden;
+        transition: all 0.2s ease-in;
+    }
+
+    &__plat-validate img{
+        transition: all 0.35s ease-in;
     }
 }
