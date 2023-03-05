@@ -292,6 +292,10 @@
   .restos-section .restos-container .resto-card {
     flex: 1 1 500px;
     width: 50%;
+    height: 20rem;
+  }
+  .restos-section .restos-container .resto-card .resto-img {
+    height: 15rem;
   }
 }
 @media screen and (min-width: 1432px) {
