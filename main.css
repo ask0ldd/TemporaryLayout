@@ -201,6 +201,7 @@
   overflow: hidden;
   box-shadow: 0px 4px 8px 0px #d3c9d3;
   position: relative;
+  cursor: pointer;
 }
 .restos-section .resto-card__nouveau {
   position: absolute;
@@ -249,6 +250,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+.restos-section .resto-card__likecontainer img {
+  position: absolute;
+  top: calc(2.5rem - 12px);
+  left: calc(2rem - 12px);
+}
+.restos-section .resto-card__likecontainer .fullheart {
+  opacity: 0;
+}
+.restos-section .resto-card__likecontainer .fullheart:hover {
+  opacity: 1;
+}
+.restos-section .resto-card__likecontainer .emptyheart:hover {
+  opacity: 0;
 }
 
 @media screen and (min-width: 800px) {

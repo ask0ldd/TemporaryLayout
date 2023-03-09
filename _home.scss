@@ -151,6 +151,7 @@
         overflow: hidden;
         box-shadow: 0px 4px 8px 0px #d3c9d3;
         position: relative;
+        cursor: pointer;
 
         &__nouveau{
             position: absolute;
@@ -203,6 +204,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+            flex-shrink: 0;
+
+            img{
+                position: absolute;
+                top:calc(5rem/2 - 12px);
+                left:calc(4rem/2 - 12px);
+            }
+
+            .fullheart{
+                opacity:0;
+            }
+
+            .fullheart:hover{
+                opacity:1;
+            }
+
+            .emptyheart:hover{
+                opacity:0;
+            }
+
+
         }
 
 
