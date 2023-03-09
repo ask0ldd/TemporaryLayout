@@ -54,6 +54,37 @@
         height:4rem;
         border-radius: 12px;
         overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .plat-anim{
+        animation-name: plat-appearing;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .anim-0sdelay{
+        animation-delay: 0s;
+    }
+
+    .anim-150msdelay{
+        animation-delay: 0.15s;
+    }
+
+    .anim-300msdelay{
+        animation-delay: 0.3s;
+    }
+
+    @keyframes plat-appearing {
+        from {
+            transform: translateY(24px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
     &__plat-container:hover{
